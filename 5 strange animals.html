@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+#author{
+  color: black;
+  font-family: sans-serif;
+}
+#author:hover{
+  color: grey;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: 'Roboto Mono', monospace;
+}
+h3{
+  font-family: 'Noto Serif', serif;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.column:hover{
+  background-color: steelblue;
+  color: darkred;
+  padding: 7px 15px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.content:hover{
+  padding: 15px 20px;
+  background-color: steelblue;
+  color: darkred;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>5 STRANGE ANIMALS FROM AROUND THE WORLD</h1>
+<hr>
+<span id="author">by Khasan Ravhanov</span>
+<hr>
+
+<h2>THE EARTH IS FULL OF WEIRD CREATURES</h2>
+<p>Nothing makes tourists whip out their cameras faster than seeing an animal on vacation. Whether searching for the big five on an African safari or combing the beach for sea lions in the Galápagos, getting up close and personal with our furry friends is always a highlight.
+
+But what if we told you that lions, tigers, and bears (oh, my) were just scratching the surface? What if we told you that in some parts of the world, there are creatures so odd and rare that many people don’t even know they exist?
+
+Here is a list of some of the strangest animals around the world.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/ewrwer435345dfsdsd.jpg?ve=1&tl=1" alt="Gharial" style="width:100%">
+      <h3>Gharial</h3>
+      <p>This isn’t your run-of-the-mill crocodile. This skinny-snouted croc is called a gharial, and it can only be found swimming in the waterways of India. Its long nose is filled with 110 teeth, making it well adapted to catching fish. Scientists estimate that there are only 235 gharials in existence.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/ertert546456fdgdf.jpg?ve=1&tl=1" alt="Axolotl" style="width:100%">
+      <h3>Axolotl, aka Mexican walking fish</h3>
+      <p>Is it just us, or does this fish look like a Pokemon? The axolotl is a small salamander that can be found in various lakes around Mexico City, although it is currently listed as an endangered species. This amphibian can regenerate limbs, has lidless eyes, and can be black or albino.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/sdsdsungds4435345.jpg?ve=1&tl=1" alt="Sun fish" style="width:100%">
+      <h3>Sun fish</h3>
+      <p>The sun fish has the distinction of being the heaviest bony fish in the world — with an adult maxing out at 2 tons. This odd-looking creature (it kind of resembles Sloth from The Goonies) is found in temperate and tropical waters around the world and is considered a delicacy in places like Japan, Korea, and Taiwan.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/werwer345345sdfsdf.jpg?ve=1&tl=1" alt="Pangolin" style="width:100%">
+      <h3>Pangolin</h3>
+      <p>If an anteater and an armadillo had a baby, it might look something like the pangolin, an odd-looking mammal found throughout parts of Asia and Africa. The pangolin has a long, specially adapted tongue for eating ants and termites and wears a protective keratin shell — it is the only mammal known to have this adaptation. Sadly, its unique characteristics also make it the most trafficked mammal in the world, as it is highly sought-after for its meat and armor. The pangolin is currently listed as a threatened species.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/erwerwer4543sdfsf.jpg?ve=1&tl=1" alt="Long-horned orb weaver spider" style="width:100%">
+  <h3>Long-horned orb weaver spider
+</h3>
+  <p>This is the type of creature that’s cool to see in photos but you never want to see in your home.</p>
+  <p> The long-horned orb weaver spider has eight eyes and long, horn-looking spines protruding from its abdomen. This particular spider can be found in the forests and fields of Asia.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+<hr>
+ 
+
+</body>
+</html>
